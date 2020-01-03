@@ -5,23 +5,20 @@
   text-align: center;
 }
 
-body{
+body {
   background-image: url("board2.jpeg");
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-
-
 }
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
- 
+
   height: 100vh;
   align-items: center;
-  
 }
 
 .play_table {
@@ -46,28 +43,25 @@ main {
 }
 
 .player_1_current,
-.player_2_current 
-{
-background-color: rgba(211, 35, 35, 0.452);
-border-radius: 30px;
-padding: 10px 2px 10px 2px;
-
+.player_2_current {
+  background-color: rgba(211, 35, 35, 0.452);
+  border-radius: 30px;
+  padding: 10px 2px 10px 2px;
 }
 
 .player_1_name,
-.player_2_name
-{
-background-color: rgba(210, 211, 223, 0.452);
-border-radius: 10px;
-padding: 10px 2px 10px 2px;
+.player_2_name {
+  background-color: rgba(210, 211, 223, 0.452);
+  border-radius: 10px;
+  padding: 10px 2px 10px 2px;
 }
 
 .player_1_result,
 .player_2_result {
-background-color: rgba(26, 38, 170, 0.452);
-border-radius: 10px; 
-color:white;
-padding:20px 2px 20px 2px;
+  background-color: rgba(26, 38, 170, 0.452);
+  border-radius: 10px;
+  color: white;
+  padding: 20px 2px 20px 2px;
 }
 
 .btn {
@@ -122,32 +116,25 @@ padding:20px 2px 20px 2px;
   }
 }
 
-
 @media (min-width: 1000px) {
-  
-
-main {
-  
-  width: 1000px;
-  margin:auto;
-  background-color: rgba(128, 128, 128, 0.219);
-  padding: 0px;
-  
-}
-
-
+  main {
+    width: 1000px;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.219);
+    padding: 0px;
+  }
 }
 
 .active {
-    color:white;
-    background-color:red;
+  color: white;
+  background-color: red;
 }
 
-.final-score{
-    width: 20vh;
-    height: 3vh;
-    margin-top: 5px;
-    margin-bottom:10vh;
-    font-size: 3vh;
-    color:black;
+.final-score {
+  width: 20vh;
+  height: 3vh;
+  margin-top: 5px;
+  margin-bottom: 10vh;
+  font-size: 3vh;
+  color: black;
 }
