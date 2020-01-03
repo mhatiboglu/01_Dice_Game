@@ -10,7 +10,12 @@ GAME RULES:
 
 */
 
-var currentPlayer, scores, currentTotal, gamestatus, finalScore;
+var currentPlayer,
+  scores,
+  currentTotal,
+  gamestatus,
+  finalScore,
+  checkFinalScoreValue;
 
 // At the begining we set default values with newGame() function.
 
@@ -54,7 +59,7 @@ document.getElementById("holdBtn").addEventListener("click", function() {
       scores[currentPlayer - 1];
 
     // Get final score value for checking winner
-    finalScore = document.querySelector(".final-score").value;
+    checkFinalScore();
     // before we change player, we will look for winning status
     if (scores[currentPlayer - 1] >= finalScore) {
       currentTotal = 0;
@@ -106,4 +111,13 @@ function newGame() {
 
   document.querySelector(`.player_1_result`).textContent = "result";
   document.querySelector(`.player_2_result`).textContent = "result";
+
+  checkFinalScore();
+}
+
+function checkFinalScore() {
+  checkFinalScoreValue = document.querySelector(".final-score").value;
+  if (parseInt(checkFinalScoreValue) !== "Nan" && checkFinalScoreValue > 0) {
+    finalScore = checkFinalScoreValue;
+  }
 }
